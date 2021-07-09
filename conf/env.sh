@@ -51,9 +51,9 @@ if [ ! -f "$TEST_PROPS" ]; then
   exit 1
 fi
 # export TEST_LOG4J="${conf_dir}/log4j.properties"
-export TEST_LOG4J="${conf_dir}/log4j2-service.properties"
+export TEST_LOG4J="${conf_dir}/log4j2.properties"
 if [ ! -f "$TEST_LOG4J" ]; then
-  echo "Could not find log4j2-service.properties in $conf_dir"
+  echo "Could not find log4j2.properties in $conf_dir"
   exit 1
 fi
 
