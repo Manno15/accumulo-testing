@@ -19,12 +19,15 @@ package org.apache.accumulo.testing.randomwalk;
 import java.util.HashMap;
 import java.util.Properties;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+// import org.slf4j.Logger;
+// import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.Logger;
 
 public class Framework {
 
-  private static final Logger log = LoggerFactory.getLogger(Framework.class);
+  // private static final Logger log = LoggerFactory.getLogger(Framework.class);
+  private static final Logger log = LogManager.getLogger(Framework.class);
   private HashMap<String,Node> nodes = new HashMap<>();
   private static final Framework INSTANCE = new Framework();
 
